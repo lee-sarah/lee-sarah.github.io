@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
+body {
+   font-family: 'Space Mono', monospace;
+   font-size: 16px;
+   color: black;
+   background-color: white;
+   text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.name {
+   margin: auto;
+   width: 60%;
+}
+.sarah {
+   padding: 40px 20px 40px 20px;
+   font-weight: 400;
+   font-size: 1em;
+   color: #c9c9e4;
+}
+.socialdiv {
+    margin: auto;
+    width: 60%;
+}
+.fab {
+    padding: 15px;
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #323035;
+    background: #c9c9e4;
+/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+.fab:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
