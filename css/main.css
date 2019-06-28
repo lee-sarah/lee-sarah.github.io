@@ -23,6 +23,7 @@ a {
     margin: auto;
     width: 60%;
 }
+/*.fab affects font awesome icons */
 .fab {
     padding: 15px;
     font-size: 18px;
@@ -37,4 +38,52 @@ a {
 .fab:hover {
     opacity: 0.6;
     transition: 0.3s;
+}
+img {
+   margin: auto;
+   max-width: 100%;
+   display: block;
+}
+.container-left, .container-right {
+   width: 50%;
+   height: auto;
+   position: relative;
+}
+.container-left {
+  float: left;
+}
+
+.container-right {
+  float: right;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+.container-left:hover .overlay, .container-right:hover .overlay {
+  opacity: .6;
+}
+.text {
+  color: white;
+  font-size: 1.7em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
