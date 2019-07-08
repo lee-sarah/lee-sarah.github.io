@@ -13,11 +13,11 @@
     text-decoration: none;
     border-radius: 50%;
     color: #000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);4
-    background: #c9c9e4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
 /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 .fab:hover {
-    opacity: 0.6;
+    opacity: 0.4;
     transition: .8s;
 }
