@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
 
 body {
-   font-family: 'Space Mono', monospace;
+   font-family: 'Montserrat', sans-serif, Arial;
    font-size: 16px;
    color: black;
    background-color: white;
@@ -28,7 +28,7 @@ img {
    display: block;
 }
 .container-left, .container-right {
-   
+
    width: 50%;
    height: auto;
    position: relative;
