@@ -7,6 +7,7 @@
 /*.fab affects font awesome icons */
 .fab {
     padding: 15px;
+    margin-right: 20px;// gap btwn icons ( the last icon must have inline style of 0px margin-right)
     font-size: 18px;
     width: 18px;
     text-align: center;
@@ -20,4 +21,7 @@
 .fab:hover {
     opacity: 0.4;
     transition: .8s;
+}
+.social-icon {
+
 }
