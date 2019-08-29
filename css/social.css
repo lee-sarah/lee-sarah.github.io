@@ -1,27 +1,22 @@
-.socialdiv {
+.social-div {
     margin: auto;
     width: 60%;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-/*.fab affects font awesome icons */
-.fab {
-    padding: 15px;
-    margin-right: 20px;// gap btwn icons ( the last icon must have inline style of 0px margin-right)
-    font-size: 18px;
-    width: 18px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: #000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
-/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+.social-icon {
+   display: inline-block;
+   padding: 14px;
+   margin-right: 20px;
+   /*gap btwn icons ( the last icon must have inline style of 0px margin-right)*/
+   width: 18px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 45%;
+   color: #000;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
-.fab:hover {
+.social-icon:hover {
     opacity: 0.4;
     transition: .8s;
-}
-.social-icon {
-
-}
