@@ -4,7 +4,7 @@ body {
    font-family: 'Montserrat', sans-serif, Arial;
    font-size: 16px;
    color: black;
-   background-color: white;
+   background-color: #f1f1f1;
    text-align: center;
    margin: 0px;
 }
@@ -21,10 +21,13 @@ a {
    font-size: 1em;
    color: #c9c9e4;
 }
+.logo:hover {
+    opacity: 0.8;
+    transition: .4s;
+}
 
-
+/*
 .container-left, .container-right {
-
    width: 50%;
    height: auto;
    position: relative;
@@ -36,7 +39,6 @@ a {
 .container-right {
   float: right;
 }
-
 .main-thumbnail {
   width: 100%;
   height: auto;
@@ -70,18 +72,9 @@ a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.logo:hover {
-    opacity: 0.8;
-    transition: .4s;
-}
-
-
+*/
 * {
-  box-sizing: border-box;
-}
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
+box-sizing: border-box;
 }
 /* Center website */
 .main {
