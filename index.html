@@ -27,7 +27,7 @@
 
 <div>
    <a href='https://lee-sarah.github.io/' target="_blank">
-      <img class="logo" src="/images/logo/1.png" alt="mooufo logo" width="150px" style="padding-top: 30px;">
+      <img class="logo" src="/images/logo/1.png" alt="mooufo logo" width="150px" style="margin: 30px;">
    </a>
 </div>
 <!--
@@ -73,15 +73,19 @@ https://www.w3schools.com/howto/howto_js_portfolio_filter.asp
 </div>
 -->
 
-<script src="/scripts/scrollTopBtn.js"></script>
-<script src="/scripts/filter.js"></script>
-
 <!--https://www.w3schools.com/howto/howto_js_portfolio_filter.asp-->
 
 <div class="main">
-<h2>BLOG</h2>
+
 <div id="myBtnContainer">
+
   <button class="btn active" onclick="filterSelection('all')"> All</button>
+  <!--
+    <button class="btn" onclick="filterSelection('blog')"> BLOG</button>
+    <button class="btn" onclick="filterSelection('blog')"> SHOP</button>
+    <button class="btn" onclick="filterSelection('blog')"> PORTFOLIO</button>
+    <br>
+-->
   <button class="btn" onclick="filterSelection('product')"> Product Reviews</button>
   <button class="btn" onclick="filterSelection('beauty')"> Beauty</button>
   <button class="btn" onclick="filterSelection('comic')"> Comic</button>
@@ -101,58 +105,71 @@ https://www.w3schools.com/howto/howto_js_portfolio_filter.asp
 
   <div class="column product beauty">
     <div class="content">
-      <img src="/images/thumbnail/1.png" alt="" style="width:100%">
-      <h4>Shaving Products</h4>
-      <p>Lorem ipsum dolor..</p>
-      <p>Beauty, Product Review</p>
+      <img src="/images/thumbnail/1.png" alt="">
+<!--
+      <div class='description'>
+      Shaving Products<br>
+      Lorem ipsum dolor..<br>
+      Beauty, Product Review
+   </div>
+-->
     </div>
   </div>
 
   <div class="column product">
     <div class="content">
-    <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+    <img src="/images/thumbnail/2.png" alt="">
+   <!--
       <h4>Eyeglasses</h4>
       <p>Lorem ipsum dolor..</p>
       <p>Fashion, Product Review</p>
+      -->
     </div>
   </div>
 
   <div class="column product">
     <div class="content">
-    <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+    <img src="/images/thumbnail/3.png" alt="">
+    <!--
       <h4>Streaming Gear</h4>
       <p>Lorem ipsum dolor..</p>
       <p>Product Review, Gaming</p>
+      -->
     </div>
   </div>
 
   <div class="column cross">
     <div class="content">
-      <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+      <img src="/images/thumbnail/4.png" alt="">
+      <!--
       <h4>Pokemon Type Chart Keychain Pattern</h4>
       <p>Lorem ipsum dolor..</p>
       <p>Cross-Stitch, Shop</p>
+      -->
     </div>
   </div>
 
   <div class="column product gaming">
     <div class="content">
-    <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+    <img src="/images/thumbnail/5.png" alt="">
+    <!--
       <h4>Custom PC Build</h4>
       <p>Lorem ipsum dolor..</p>
       <p>Gaming, Product Review, Film</p>
+      -->
     </div>
   </div>
 
   <div class="column food">
     <div class="content">
-    <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+    <img src="/images/thumbnail/6.JPG" alt="">
+    <!--
       <h4>Classic</h4>
       <p>Lorem ipsum dolor..</p>
       <p>Food</p>
+      -->
     </div>
   </div>
-
 
 
 </div>
@@ -192,5 +209,7 @@ https://www.w3schools.com/howto/howto_js_portfolio_filter.asp
    </div>
 </a>
 -->
+<script src="/scripts/scrollTopBtn.js"></script>
+<script src="/scripts/filter.js"></script> <!-- script must be near end of body to work-->
 </body>
 </html>

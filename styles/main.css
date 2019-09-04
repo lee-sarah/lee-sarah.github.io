@@ -73,8 +73,9 @@ a {
   text-align: center;
 }
 */
+
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* Center website */
 .main {
@@ -94,6 +95,7 @@ box-sizing: border-box;
   float: left;
   width: 33.33%;
   display: none; /* Hide all elements by default */
+
 }
 /* Clear floats after rows */
 .row:after {
@@ -103,8 +105,9 @@ box-sizing: border-box;
 }
 /* Content */
 .content {
-  background-color: white;
-  padding: 10px;
+padding: 10px;
+background-color: white;
+height: 400px;
 }
 /* The "show" class is added to the filtered elements */
 .show {
@@ -121,8 +124,19 @@ box-sizing: border-box;
 .btn:hover {
   background-color: #ddd;
 }
-
 .btn.active {
   background-color: #666;
   color: white;
 }
+.content > img {
+   width: 100%;
+   height: 100%; /* change to 75% if i want  text */
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.content > .description {
+   width: 100%;
+   height: 25%;
+}
+/*https://stackoverflow.com/questions/9071830/contain-an-image-within-a-div*/
