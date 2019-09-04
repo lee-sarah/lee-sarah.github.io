@@ -12,12 +12,11 @@
         <link rel="stylesheet" type="text/css" href="/styles/scrollTopBtn.css">
         <link rel="stylesheet" type="text/css" href="/styles/indexmenu.css">
         <link rel="stylesheet" type="text/css" href="/styles/highlighted.css">
-
         <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf'  type="text/css" rel='stylesheet'>
         <link rel="icon" href="/images/favicon/2.png" type="image/gif" sizes="32x32">
        </head>
-         <body>
-            <button id='scrollTopBtn' onclick='topFunction()' title='Go to top'><i class='fas fa-angle-up'></i></button>
+       <body>
+         <button id='scrollTopBtn' onclick='topFunction()' title='Go to top'><i class='fas fa-angle-up'></i></button>
 <!--
             <div class='name'>
                <a href='https://lee-sarah.github.io/' class='sarah'>Sarah Lee</a>
@@ -31,13 +30,14 @@
       <img class="logo" src="/images/logo/1.png" alt="mooufo logo" width="150px" style="padding-top: 30px;">
    </a>
 </div>
-
+<!--
 <div class='index-menu'>
    <a href="#" target="_blank" class="index-menu-text">BLOG</a>
    <a href="#" target="_blank" class="index-menu-text">SHOP</a>
    <a href="#" target="_blank" class="index-menu-text">PORTFOLIO</a>
-</div><!--end of index-menu-->
-
+</div>
+-->
+<!--
 <div class='social-div'>
    <a href="https://www.instagram.com/" target="_blank">
       <img class="social-icon" src="/images/social/instagram.svg" alt="instagram" width="" style="">
@@ -55,44 +55,143 @@
       <img class="social-icon" src="/images/social/codepen.svg" alt="codepen" width="" style="">
    </a>
    <a href="https://www.github.com/" target="_blank">
-      <img class="social-icon" src="/images/social/github.svg" alt="github" width="" style="margin-right: 0px;"></a>
-      <!--margin-right 0px for the last icon only, must be in-line style-->
-</div><!--end of social-div-->
+      <img class="social-icon" src="/images/social/github.svg" alt="github" width="" style="margin-right: 0px;">
+   </a>
+</div>
+-->
+
+<!--
+https://www.w3schools.com/howto/howto_js_portfolio_filter.asp
+-->
+<!--
 <div>
    <a href="#" class="highlighted underline underline-color1" target="_blank">Test 1</a>
+   <br>
+   <a href="#" class="highlighted underline underline-color2" target="_blank">Test 1</a>
+   <br>
+   <a href="#" class="highlighted underline underline-color3" target="_blank">Test 1</a>
+</div>
+-->
+
+<script src="/scripts/scrollTopBtn.js"></script>
+<script src="/scripts/filter.js"></script>
+
+<div class="main">
+
+<h2>BLOG</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> ALL</button>
+  <button class="btn" onclick="filterSelection('product')"> Product Review</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
 </div>
 
-            <script src="/scripts/scrollTopBtn.js"></script>
-            <a href='/page/1.html'>
-               <div class="container-left">
-                  <img class='image' src='/images/thumbnail/1.png'/>
-                  <div class="overlay">
-                  <div class="text">Wet Shaving</div>
-                  </div>
-               </div>
-            </a>
-            <a href='/page/2.html'>
-               <div class="container-right">
-                  <img class='image' src='/images/thumbnail/2.png'/>
-                  <div class="overlay">
-                  <div class="text">Eyeglasses</div>
-                  </div>
-               </div>
-            </a>
-            <a href='/page/3.html'>
-            <div class="container-left">
-               <img class='image' src='/images/thumbnail/3.png'/>
-               <div class="overlay">
-               <div class="text">Streaming Gear</div>
-               </div>
-            </div>
-            </a>
-            <a href='/page/4.html'>
-            <div class="container-right">
-               <img class='image' src='/images/thumbnail/4.png'/>
-               <div class="overlay">
-               <div class="text">Pokemon Cross Stitch</div>
-               </div>
-            </div>
-         </body>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column product">
+    <div class="content">
+      <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+      <h4>Shaving Products</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column product">
+    <div class="content">
+    <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column product">
+    <div class="content">
+    <img src="/images/thumbnail/2.png" alt="" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="/images/thumbnail/3.png" alt="" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="/images/thumbnail/4.png" alt="" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="/images/thumbnail/5.png" alt="" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="/images/thumbnail/6.JPG" alt="" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="/images/thumbnail/1.png" alt="" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<!-- END MAIN -->
+</div>
+
+<!--
+<a href='/page/1.html'>
+   <div class="container-left">
+      <img class='main-thumbnail' src='/images/thumbnail/1.png'/>
+      <div class="main-overlay">
+         <div class="text">Wet Shaving</div>
+      </div>
+   </div>
+</a>
+<a href='/page/2.html'>
+   <div class="container-right">
+      <img class='main-thumbnail' src='/images/thumbnail/2.png'/>
+      <div class="main-overlay">
+         <div class="text">Eyeglasses</div>
+      </div>
+   </div>
+</a>
+<a href='/page/3.html'>
+<div class="container-left">
+   <img class='main-thumbnail' src='/images/thumbnail/3.png'/>
+   <div class="main-overlay ">
+      <div class="text">Streaming Gear</div>
+   </div>
+</div>
+</a>
+<a href='/page/4.html'>
+<div class="container-right">
+   <img class='main-thumbnail' src='/images/thumbnail/4.png'/>
+   <div class="main-overlay ">
+   <div class="text">Pokemon Cross Stitch</div>
+      </div>
+   </div>
+</a>
+-->
+</body>
 </html>
